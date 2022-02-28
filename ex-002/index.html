@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS!</title>
+    <script>
+        function acendeLampada() 
+        {
+            document.getElementById("luz").src = "lampada-acesa.jpg";
+        }
+
+        function apagaLampada()
+        {
+            document.getElementById("luz").src = "lampada-apagada.jpg"
+        }
+
+        function quebraLampada()
+        {
+            document.getElementById("luz").src = "lampada-quebrada.jpg"
+        }
+    </script>
+</head>
+<body>
+    <h1>Passe o mouse por cima para acender a lâmpada.</h1>
+    <img src="lampada-apagada.jpg" id="luz" alt="" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()">
+    <h2>Clique caso queira quebrá-la!</h2>
+
+</body>
+</html>
